@@ -1,0 +1,90 @@
+@page "/recipes"
+@attribute [Authorize]
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.EntityFrameworkCore
+@using RecipeApp.Data
+@using RecipeApp.Models
+@inject ApplicationDbContext Db
+@inject AuthenticationStateProvider AuthStateProvider
+
+<h3>My recipes</h3>
+
+<AuthorizeView>
+    <Authorized>
+        <EditForm Model="@newRecipe" OnValidSubmit="@AddRecipeAsync" Context="formContext">
+            <DataAnnotationsValidator />
+            <div>
+                <label>Title</label>
+                <InputText @bind-Value="newRecipe.Title" />
+            </div>
+            <div>
+                <label>Instructions</label>
+                <InputTextArea @bind-Value="newRecipe.Instructions" />
+            </div>
+            <button type="submit">Add recipe</button>
+        </EditForm>
+
+        <hr />
+
+        <ul>
+            @foreach (var r in myRecipes)
+            {
+                <li>
+                    <strong>@r.Title:</strong> @r.Instructions
+                </li>
+            }
+        </ul>
+    </Authorized>
+    <NotAuthorized>
+        <p>You must be logged in to view recipes.</p>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private Recipe newRecipe = new();
+    private List<Recipe> myRecipes = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadRecipesAsync();
+    }
+
+    private async Task LoadRecipesAsync()
+    {
+        var state = await AuthStateProvider.GetAuthenticationStateAsync();
+        var idClaim = state.User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+        if (int.TryParse(idClaim, out var userId))
+        {
+            myRecipes = await Db.Recipes
+                .Where(r => r.OwnerUserId == userId)
+                .OrderByDescending(r => r.Id)
+                .ToListAsync();
+        }
+        else
+        {
+            myRecipes = new List<Recipe>();
+        }
+    }
+
+    private async Task AddRecipeAsync()
+    {
+        var state = await AuthStateProvider.GetAuthenticationStateAsync();
+        var idClaim = state.User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+        if (int.TryParse(idClaim, out var userId))
+        {
+            var recipe = new Recipe
+            {
+                Title = newRecipe.Title,
+                Instructions = newRecipe.Instructions,
+                OwnerUserId = userId
+            };
+            Db.Recipes.Add(recipe);
+            await Db.SaveChangesAsync();
+
+            newRecipe = new Recipe();
+            await LoadRecipesAsync();
+        }
+    }
+}

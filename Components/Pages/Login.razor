@@ -1,0 +1,61 @@
+@page "/login"
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.ComponentModel.DataAnnotations
+
+@inject NavigationManager Nav
+@inject IHttpClientFactory ClientFactory
+
+<h3>Login</h3>
+
+<EditForm Model="@model" OnValidSubmit="@LoginAsync">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label>Email</label>
+        <InputText @bind-Value="model.Email" />
+    </div>
+    <div>
+        <label>Password</label>
+        <InputText @bind-Value="model.Password" Type="password" />
+    </div>
+
+    <button type="submit">Log in</button>
+    @if (!string.IsNullOrEmpty(error))
+    {
+        <p style="color:red">@error</p>
+    }
+</EditForm>
+
+@code {
+    private LoginModel model = new();
+    private string? error;
+
+    public class LoginModel
+    {
+        [Required, EmailAddress] public string Email { get; set; } = string.Empty;
+        [Required] public string Password { get; set; } = string.Empty;
+    }
+
+    private async Task LoginAsync()
+    {
+        try
+        {
+            var client = ClientFactory.CreateClient();
+            client.BaseAddress = new Uri(Nav.BaseUri);
+            var res = await client.PostAsJsonAsync("/auth/login", model);
+            if (res.IsSuccessStatusCode)
+            {
+                Nav.NavigateTo("/recipes", true);
+            }
+            else
+            {
+                error = await res.Content.ReadAsStringAsync();
+            }
+        }
+        catch (Exception ex)
+        {
+            error = ex.Message;
+        }
+    }
+}

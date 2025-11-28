@@ -1,0 +1,15 @@
+@page "/logout"
+@inject NavigationManager Nav
+@inject IHttpClientFactory ClientFactory
+
+<h3>Logging out...</h3>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var client = ClientFactory.CreateClient();
+        client.BaseAddress = new Uri(Nav.BaseUri);
+        var res = await client.PostAsync("/auth/logout", content: null);
+        Nav.NavigateTo("/", true);
+    }
+}
