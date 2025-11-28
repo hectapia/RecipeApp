@@ -322,6 +322,7 @@ C:\Famback\hector\webdev\RecipeApp\RecipeApp\obj\Debug\net9.0\RecipeApp.csproj.C
 C:\Famback\hector\webdev\RecipeApp\RecipeApp\obj\Debug\net9.0\RecipeApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Famback\hector\webdev\RecipeApp\RecipeApp\obj\Debug\net9.0\RecipeApp.RazorAssemblyInfo.cache
 C:\Famback\hector\webdev\RecipeApp\RecipeApp\obj\Debug\net9.0\RecipeApp.RazorAssemblyInfo.cs
+C:\Famback\hector\webdev\RecipeApp\RecipeApp\obj\Debug\net9.0\RecipeApp.sourcelink.json
 C:\Famback\hector\webdev\RecipeApp\RecipeApp\obj\Debug\net9.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
 C:\Famback\hector\webdev\RecipeApp\RecipeApp\obj\Debug\net9.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 C:\Famback\hector\webdev\RecipeApp\RecipeApp\obj\Debug\net9.0\scopedcss\bundle\RecipeApp.styles.css

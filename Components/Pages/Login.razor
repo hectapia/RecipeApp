@@ -1,9 +1,8 @@
 @page "/login"
-@using Microsoft.AspNetCore.Components.Authorization
 @using System.ComponentModel.DataAnnotations
 
 @inject NavigationManager Nav
-@inject IHttpClientFactory ClientFactory
+@inject HttpClient Http
 
 <h3>Login</h3>
 
@@ -41,12 +40,13 @@
     {
         try
         {
-            var client = ClientFactory.CreateClient();
-            client.BaseAddress = new Uri(Nav.BaseUri);
-            var res = await client.PostAsJsonAsync("/auth/login", model);
+            // Build absolute URI using Nav.BaseUri
+            var uri = new Uri($"{Nav.BaseUri}auth/login");
+            var res = await Http.PostAsJsonAsync(uri, model);
+
             if (res.IsSuccessStatusCode)
             {
-                Nav.NavigateTo("/recipes", true);
+                Nav.NavigateTo("/recipes", forceLoad: true);
             }
             else
             {

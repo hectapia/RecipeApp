@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Components.Server;
 using Microsoft.EntityFrameworkCore;
 using RecipeApp.Data;
 using RecipeApp.Services;
+using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,8 +20,13 @@ builder.Services
         options.LoginPath = "/login";
         options.LogoutPath = "/logout";
         options.AccessDeniedPath = "/login";
+
+        options.Cookie.Name = "RecipeApp.Auth";
         options.Cookie.HttpOnly = true;
         options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest; // Use Always in production with HTTPS
+        options.Cookie.SameSite = SameSiteMode.Lax;
+
+        options.ExpireTimeSpan = TimeSpan.FromHours(1);
         options.SlidingExpiration = true;
     });
 
@@ -35,8 +42,11 @@ builder.Services.AddHttpContextAccessor();
 // App services
 builder.Services.AddScoped<IUserService, UserService>();
 
-// Provide authentication state to Blazor components via existing ASP.NET Core auth
+// Provide authentication state to Blazor components via ASP.NET Core auth
 builder.Services.AddScoped<AuthenticationStateProvider, ServerAuthenticationStateProvider>();
+
+// register HttpClient (default client with BaseAddress)
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
@@ -68,15 +78,16 @@ app.MapFallbackToPage("/_Host");
 
 app.Run();
 
-// Custom AuthenticationStateProvider for Blazor Server using ASP.NET Core auth
-public class ServerAuthenticationStateProvider : AuthenticationStateProvider
+/// <summary>
+/// AuthenticationStateProvider that revalidates cookie auth so Blazor circuits
+/// stay in sync with ASP.NET Core authentication.
+/// </summary>
+public class ServerAuthenticationStateProvider : RevalidatingServerAuthenticationStateProvider
 {
-    private readonly IHttpContextAccessor _httpContextAccessor;
-    public ServerAuthenticationStateProvider(IHttpContextAccessor accessor) => _httpContextAccessor = accessor;
+    public ServerAuthenticationStateProvider(ILoggerFactory loggerFactory) : base(loggerFactory) { }
 
-    public override Task<AuthenticationState> GetAuthenticationStateAsync()
-    {
-        var user = _httpContextAccessor.HttpContext?.User ?? new System.Security.Claims.ClaimsPrincipal();
-        return Task.FromResult(new AuthenticationState(user));
-    }
+    protected override TimeSpan RevalidationInterval => TimeSpan.FromMinutes(5);
+
+    protected override Task<bool> ValidateAuthenticationStateAsync(AuthenticationState state, CancellationToken token)
+        => Task.FromResult(true);
 }
