@@ -61,35 +61,38 @@ RecipeApp/
 ## 🚀 Getting Started
 
 ### 1. Create solution and project
+``` 
 bash
 dotnet new sln -n RecipeApp
 mkdir src && cd src
 dotnet new blazorserver -n RecipeApp
 dotnet sln ../RecipeApp.sln add RecipeApp/RecipeApp.csproj
+``` 
 
 ## Add EF Core + SQLite
-
+``` 
 dotnet add package Microsoft.EntityFrameworkCore
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 dotnet add package Microsoft.EntityFrameworkCore.Design
+``` 
 
 ## Apply migrations
-```bash 
+``` 
 dotnet ef migrations add InitialCreate
 dotnet ef database update
+``` 
 
 ## Run the app
+``` 
 bash 
 dotnet run
+``` 
 
 ## 🔐 Authentication Flow
-Register: Users create an account with email, display name, and password. Passwords are hashed before storage.
-
-Login: Credentials are validated, and a secure cookie is issued.
-
-Logout: Cookie is cleared, ending the session.
-
-Protected routes: Pages like /recipes require authentication ([Authorize]).
+- Register: Users create an account with email, display name, and password. Passwords are hashed before storage.
+- Login: Credentials are validated, and a secure cookie is issued.
+- Logout: Cookie is cleared, ending the session.
+- Protected routes: Pages like /recipes require authentication ([Authorize]).
 
 ## 🛠️ Tech Stack
 Blazor Server (UI framework)
@@ -101,18 +104,14 @@ Entity Framework Core (ORM)
 SQLite (database)
 
 ## 📖 Notes
-In production, enforce HTTPS and set cookie SecurePolicy = Always.
-
-Consider adding email confirmation, password reset, and role-based authorization for more advanced scenarios.
-
-Recipes are linked to users via a foreign key (OwnerUserId). Public recipes can be created by allowing OwnerUserId = null.
+-  In production, enforce HTTPS and set cookie SecurePolicy = Always.
+-  Consider adding email confirmation, password reset, and role-based authorization for more advanced scenarios.
+-  Recipes are linked to users via a foreign key (OwnerUserId). Public recipes can be created by allowing OwnerUserId = null.
 
 ## 👩‍💻 Development Tips
-Use dotnet watch run for hot reload during development.
-
-Run dotnet ef migrations add <Name> whenever you change models.
-
-Check logs in the terminal for EF Core and authentication events.
+-  Use dotnet watch run for hot reload during development.
+-  Run dotnet ef migrations add <Name> whenever you change models.
+-  Check logs in the terminal for EF Core and authentication events.
 
 ## 📜 License
 This project is provided as a learning example. You are free to use and adapt it for your own projects.
@@ -133,22 +132,14 @@ Authenticated users can add new recipes and view their personal recipe list.
 
 ## 🖼️ How to Capture Screenshots
 - Run the app locally with dotnet run.
-
 - Navigate to each page (/register, /login, /recipes).
-
 - Use your OS screenshot tool (Snipping Tool on Windows, Shift+Cmd+4 on macOS).
-
 - Save the images into a folder like docs/images/.
-
 - Update the README paths to point to those files.
 
 ## ✅ Example Usage Flow
 - Register a new account.
-
 - Login with the account credentials.
-
 - Navigate to Recipes and add a recipe (title + instructions).
-
 - See your recipe appear in the list.
-
 - Logout when finished.
