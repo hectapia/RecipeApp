@@ -3,7 +3,7 @@
 A simple **Blazor Server** application for managing recipes with secure user authentication.  
 Users can **register, log in, log out**, and manage their own recipes. Authentication is implemented using **ASP.NET Core Identity-style password hashing** and **cookie-based authentication middleware**.
 
----
+
 
 ## ✨ Features
 
@@ -14,7 +14,7 @@ Users can **register, log in, log out**, and manage their own recipes. Authentic
 - 📦 EF Core with SQLite database
 - 🖥️ Blazor Server UI
 
----
+
 
 ## 📂 Project Structure
 ```
@@ -56,12 +56,12 @@ RecipeApp/
     └─ site.css
 ```
 
----
+
 
 ## 🚀 Getting Started
 
 ### 1. Create solution and project
-```bash
+bash
 dotnet new sln -n RecipeApp
 mkdir src && cd src
 dotnet new blazorserver -n RecipeApp
@@ -79,7 +79,7 @@ dotnet ef migrations add InitialCreate
 dotnet ef database update
 
 ## Run the app
-```bash 
+bash 
 dotnet run
 
 ## 🔐 Authentication Flow
