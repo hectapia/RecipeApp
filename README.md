@@ -19,25 +19,6 @@ Users can **register, log in, log out**, and manage their own recipes. Authentic
 ## 📂 Project Structure
 ```
 RecipeApp/
-├─ RecipeApp.sln
-├─ Program.cs
-├─ appsettings.json
-├─ appsettings.Development.json
-├─ Properties/
-│  └─ launchSettings.json
-├─ Pages/
-│  └─ _Host.cshtml
-├─ Data/
-│  ├─ ApplicationDbContext.cs
-│  └─ DbInitializer.cs
-├─ Models/
-│  ├─ User.cs
-│  └─ Recipe.cs
-├─ Services/
-│  ├─ IUserService.cs
-│  └─ UserService.cs
-├─ Controllers/
-│  └─ AuthController.cs
 ├─ Components/
 │  ├─ _Imports.razor
 │  ├─ App.razor
@@ -48,20 +29,54 @@ RecipeApp/
 │  │   ├─ NavMenu.razor
 │  │   └─ NavMenu.razor.css
 │  └─ Pages/ 
-│       ├─ _Imports.razor
-│       ├─ App.razor
-│       ├─ Index.razor
-│       ├─ Register.razor
-│       ├─ Login.razor
-│       ├─ Logout.razor
-│       └─ Recipes.razor
+│     ├─ Counter.razor
+│     ├─ Error.razor
+│     ├─ Home.razorx
+│     ├─ Index.razor
+│     ├─ Login.razor
+│     ├─ Logout.razor
+│     ├─ Recipes.razor
+│     ├─ Register.razor
+│     └─ Weather.razor
+├─ Controllers/
+│  └─ AuthController.cs
+├─ Data/
+│  ├─ ApplicationDbContext.cs
+│  └─ DbInitializer.cs
+├─ Migrations/
+│  ├─ 20251128064942_InitialCreate.cs
+│  ├─ 20251128064942_InitialCreate.Designer.css
+│  ├─ 20251128181659_AddRecipeModelFix.cs
+│  ├─ 20251128181659_AddRecipeModelFix.Designer.cs
+│  └─ ApplicationDbContextModelSnapshot.cs
+├─ Models/
+│  ├─ Recipe.cs
+│  └─ User.cs
+├─ Pages/
+│  └─ _Host.cshtml
+├─ Properties/
+│  └─ launchSettings.json
+├─ Services/
+│  ├─ IUserService.cs
+│  └─ UserService.cs
 ├─ Shared/
+│  ├─ LoginDisplay.razor
 │  ├─ MainLayout.razor
-│  ├─ NavMenu.razor
-│  └─ LoginDisplay.razor
+│  └─ NavMenu.razor
 └─ wwwroot/
-    └─ css/
-    └─ site.css
+│  ├─ css/
+│  │  └─ site.css
+│  ├─ lib/
+│  │  └─ bootstrap/
+│  ├─ app.css
+│  └─ favicon.png
+├─ appsettings.Development.json
+├─ appsettings.json
+├─ Program.cs
+├─ README.md
+├─ RecipeApp.csproj
+├─ recipeapp.db
+└─ RecipeApp.sln
 ```
 
 
