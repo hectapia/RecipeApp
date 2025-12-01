@@ -39,8 +39,16 @@ RecipeApp/
 ├─ Controllers/
 │  └─ AuthController.cs
 ├─ Components/
-│    └─ Pages/ 
-│       ├─ _Imports.razor    
+│  ├─ _Imports.razor
+│  ├─ App.razor
+│  ├─ Routes.razor
+│  ├─ Layout/ 
+│  │   ├─ MainLayout.razor
+│  │   ├─ MainLayout.razor.css
+│  │   ├─ NavMenu.razor
+│  │   └─ NavMenu.razor.css
+│  └─ Pages/ 
+│       ├─ _Imports.razor
 │       ├─ App.razor
 │       ├─ Index.razor
 │       ├─ Register.razor
