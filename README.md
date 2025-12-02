@@ -23,21 +23,12 @@ RecipeApp/
 │  ├─ _Imports.razor
 │  ├─ App.razor
 │  ├─ Routes.razor
-│  ├─ Layout/ 
-│  │   ├─ MainLayout.razor
-│  │   ├─ MainLayout.razor.css
-│  │   ├─ NavMenu.razor
-│  │   └─ NavMenu.razor.css
 │  └─ Pages/ 
-│     ├─ Counter.razor
-│     ├─ Error.razor
-│     ├─ Home.razorx
 │     ├─ Index.razor
 │     ├─ Login.razor
 │     ├─ Logout.razor
 │     ├─ Recipes.razor
-│     ├─ Register.razor
-│     └─ Weather.razor
+│     └─ Register.razor
 ├─ Controllers/
 │  └─ AuthController.cs
 ├─ Data/
