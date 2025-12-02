@@ -1,14 +1,14 @@
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RecipeApp.Services;
 using System.Security.Claims;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace RecipeApp.Controllers
 {
-    [ApiController]
     [Route("auth")]
+    [ApiController] // You can keep this or remove it, but we are acting like an MVC controller now
     public class AuthController : ControllerBase
     {
         private readonly IUserService _userService;
@@ -18,46 +18,37 @@ namespace RecipeApp.Controllers
             _userService = userService;
         }
 
-        public record RegisterRequest(string Email, string DisplayName, string Password);
-        public record LoginRequest(string Email, string Password);
-
-        [HttpPost("register")]
-        [AllowAnonymous]
-        public async Task<IActionResult> Register([FromBody] RegisterRequest req)
-        {
-            if (string.IsNullOrWhiteSpace(req.Email) || string.IsNullOrWhiteSpace(req.Password))
-                return BadRequest("Email and password are required.");
-
-            try
-            {
-                var user = await _userService.RegisterAsync(req.Email, req.DisplayName, req.Password);
-                await SignInAsync(user);
-                return Ok(new { message = "Registered", email = user.Email, displayName = user.DisplayName });
-            }
-            catch (InvalidOperationException ex)
-            {
-                return Conflict(ex.Message);
-            }
-        }
+        // REMOVE the Record classes if you aren't using them for JSON anymore, 
+        // or keep them if you plan to support an API later.
 
         [HttpPost("login")]
         [AllowAnonymous]
-        public async Task<IActionResult> Login([FromBody] LoginRequest req)
+        // Change [FromBody] to [FromForm] so standard HTML forms work
+        public async Task<IActionResult> Login([FromForm] string email, [FromForm] string password, [FromForm] string? returnUrl)
         {
-            var user = await _userService.ValidateCredentialsAsync(req.Email, req.Password);
-            if (user == null) return Unauthorized("Invalid credentials.");
+            var user = await _userService.ValidateCredentialsAsync(email, password);
+            
+            if (user == null) 
+            {
+                // In a real app, you'd redirect back to login with an error query param
+                return Unauthorized("Invalid credentials."); 
+            }
+
             await SignInAsync(user);
-            return Ok(new { message = "Logged in", email = user.Email, displayName = user.DisplayName });
+
+            // Important: The SERVER tells the browser to redirect, ensuring the Cookie travels with it.
+            return LocalRedirect(returnUrl ?? "/recipes");
         }
 
         [HttpPost("logout")]
-        [Authorize]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return Ok(new { message = "Logged out" });
+            return LocalRedirect("/");
         }
-
+        
+        // ... Register method needs similar changes if you want registration to auto-login ...
+        
         private async Task SignInAsync(RecipeApp.Models.User user)
         {
             var claims = new List<Claim>
@@ -75,7 +66,6 @@ namespace RecipeApp.Controllers
                 principal,
                 new AuthenticationProperties { IsPersistent = true }
             );
-
         }
     }
 }

@@ -3,10 +3,20 @@
 
 <AuthorizeView>
     <Authorized>
-        <span>Hello, @context.User.Identity?.Name!</span>
-        <a class="ml-2" href="/logout">Logout</a>
+        <span class="navbar-text me-3">
+            Hello, <strong>@context.User.Identity?.Name</strong>!
+        </span>
+        
+        <a class="btn btn-sm btn-outline-primary me-2" href="recipes">
+            <span class="bi bi-journal-text"></span> My Recipes
+        </a>
+
+        <a class="btn btn-sm btn-outline-danger" href="logout">
+            Log out
+        </a>
     </Authorized>
     <NotAuthorized>
-        <a href="/login">Login</a>
+        <a class="btn btn-sm btn-outline-secondary me-2" href="register">Register</a>
+        <a class="btn btn-sm btn-primary" href="login">Log in</a>
     </NotAuthorized>
 </AuthorizeView>
