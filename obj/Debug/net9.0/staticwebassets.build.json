@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3bO/KFz8IHQ9ufV+/8W0NaugUBzU4tR5UxyY1Q20syI=",
+  "Hash": "DjmcPoVR8VRKODQlnqaB4pm+ecwVQZDXn1A+1i5UDs8=",
   "Source": "RecipeApp",
   "BasePath": "_content/RecipeApp",
   "Mode": "Default",
@@ -731,12 +731,12 @@
       "OriginalItemSpec": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ojcy8qcg4f-x0yoabtvfu.gz",
+      "Identity": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ojcy8qcg4f-ocbgml9j96.gz",
       "SourceId": "RecipeApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/RecipeApp",
-      "RelativePath": "RecipeApp#[.{fingerprint=x0yoabtvfu}]?.styles.css.gz",
+      "RelativePath": "RecipeApp#[.{fingerprint=ocbgml9j96}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -745,8 +745,8 @@
       "RelatedAsset": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\RecipeApp.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "gpohhyggd5",
-      "Integrity": "rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw=",
+      "Fingerprint": "oo926qbhj0",
+      "Integrity": "iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\RecipeApp.styles.css"
@@ -836,12 +836,12 @@
       "OriginalItemSpec": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ufi2nly52l-x0yoabtvfu.gz",
+      "Identity": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ufi2nly52l-ocbgml9j96.gz",
       "SourceId": "RecipeApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/RecipeApp",
-      "RelativePath": "RecipeApp#[.{fingerprint=x0yoabtvfu}]!.bundle.scp.css.gz",
+      "RelativePath": "RecipeApp#[.{fingerprint=ocbgml9j96}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -850,8 +850,8 @@
       "RelatedAsset": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\RecipeApp.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "gpohhyggd5",
-      "Integrity": "rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw=",
+      "Fingerprint": "oo926qbhj0",
+      "Integrity": "iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\RecipeApp.bundle.scp.css"
@@ -1039,8 +1039,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "x0yoabtvfu",
-      "Integrity": "v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk=",
+      "Fingerprint": "ocbgml9j96",
+      "Integrity": "iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\RecipeApp.styles.css"
@@ -1060,8 +1060,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "x0yoabtvfu",
-      "Integrity": "v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk=",
+      "Fingerprint": "ocbgml9j96",
+      "Integrity": "iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\RecipeApp.bundle.scp.css"
@@ -15847,12 +15847,12 @@
     },
     {
       "Route": "RecipeApp.bundle.scp.css",
-      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ufi2nly52l-x0yoabtvfu.gz",
+      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ufi2nly52l-ocbgml9j96.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000562113547"
+          "Quality": "0.000489955904"
         }
       ],
       "ResponseHeaders": [
@@ -15862,15 +15862,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1778"
+          "Value": "2040"
         },
         {
           "Name": "ETag",
-          "Value": "\"rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw=\""
+          "Value": "\"iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Nov 2025 23:41:15 GMT"
+          "Value": "Tue, 02 Dec 2025 00:27:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15890,13 +15890,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk=\""
+          "Value": "W/\"iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk="
+          "Value": "sha256-iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE="
         }
       ]
     },
@@ -15911,7 +15911,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5965"
+          "Value": "11908"
         },
         {
           "Name": "Content-Type",
@@ -15919,11 +15919,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk=\""
+          "Value": "\"iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Nov 2025 23:41:15 GMT"
+          "Value": "Tue, 02 Dec 2025 00:27:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15933,13 +15933,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk="
+          "Value": "sha256-iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE="
         }
       ]
     },
     {
       "Route": "RecipeApp.bundle.scp.css.gz",
-      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ufi2nly52l-x0yoabtvfu.gz",
+      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ufi2nly52l-ocbgml9j96.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15948,7 +15948,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1778"
+          "Value": "2040"
         },
         {
           "Name": "Content-Type",
@@ -15956,11 +15956,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw=\""
+          "Value": "\"iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Nov 2025 23:41:15 GMT"
+          "Value": "Tue, 02 Dec 2025 00:27:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15978,18 +15978,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw="
+          "Value": "sha256-iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24="
         }
       ]
     },
     {
-      "Route": "RecipeApp.styles.css",
-      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ojcy8qcg4f-x0yoabtvfu.gz",
+      "Route": "RecipeApp.ocbgml9j96.bundle.scp.css",
+      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ufi2nly52l-ocbgml9j96.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000562113547"
+          "Quality": "0.000489955904"
         }
       ],
       "ResponseHeaders": [
@@ -15999,152 +15999,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1778"
+          "Value": "2040"
         },
         {
           "Name": "ETag",
-          "Value": "\"rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw=\""
+          "Value": "\"iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Nov 2025 23:41:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk="
-        }
-      ]
-    },
-    {
-      "Route": "RecipeApp.styles.css",
-      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\RecipeApp.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5965"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Nov 2025 23:41:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk="
-        }
-      ]
-    },
-    {
-      "Route": "RecipeApp.styles.css.gz",
-      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ojcy8qcg4f-x0yoabtvfu.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1778"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Nov 2025 23:41:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw="
-        }
-      ]
-    },
-    {
-      "Route": "RecipeApp.x0yoabtvfu.bundle.scp.css",
-      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ufi2nly52l-x0yoabtvfu.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000562113547"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1778"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Nov 2025 23:41:15 GMT"
+          "Value": "Tue, 02 Dec 2025 00:27:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16164,13 +16027,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk=\""
+          "Value": "W/\"iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "x0yoabtvfu"
+          "Value": "ocbgml9j96"
         },
         {
           "Name": "label",
@@ -16178,12 +16041,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk="
+          "Value": "sha256-iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE="
         }
       ]
     },
     {
-      "Route": "RecipeApp.x0yoabtvfu.bundle.scp.css",
+      "Route": "RecipeApp.ocbgml9j96.bundle.scp.css",
       "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\RecipeApp.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -16193,7 +16056,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5965"
+          "Value": "11908"
         },
         {
           "Name": "Content-Type",
@@ -16201,11 +16064,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk=\""
+          "Value": "\"iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Nov 2025 23:41:15 GMT"
+          "Value": "Tue, 02 Dec 2025 00:27:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16215,7 +16078,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "x0yoabtvfu"
+          "Value": "ocbgml9j96"
         },
         {
           "Name": "label",
@@ -16223,13 +16086,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk="
+          "Value": "sha256-iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE="
         }
       ]
     },
     {
-      "Route": "RecipeApp.x0yoabtvfu.bundle.scp.css.gz",
-      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ufi2nly52l-x0yoabtvfu.gz",
+      "Route": "RecipeApp.ocbgml9j96.bundle.scp.css.gz",
+      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ufi2nly52l-ocbgml9j96.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -16238,7 +16101,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1778"
+          "Value": "2040"
         },
         {
           "Name": "Content-Type",
@@ -16246,11 +16109,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw=\""
+          "Value": "\"iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Nov 2025 23:41:15 GMT"
+          "Value": "Tue, 02 Dec 2025 00:27:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16268,7 +16131,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "x0yoabtvfu"
+          "Value": "ocbgml9j96"
         },
         {
           "Name": "label",
@@ -16276,18 +16139,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw="
+          "Value": "sha256-iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24="
         }
       ]
     },
     {
-      "Route": "RecipeApp.x0yoabtvfu.styles.css",
-      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ojcy8qcg4f-x0yoabtvfu.gz",
+      "Route": "RecipeApp.ocbgml9j96.styles.css",
+      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ojcy8qcg4f-ocbgml9j96.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000562113547"
+          "Quality": "0.000489955904"
         }
       ],
       "ResponseHeaders": [
@@ -16297,15 +16160,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1778"
+          "Value": "2040"
         },
         {
           "Name": "ETag",
-          "Value": "\"rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw=\""
+          "Value": "\"iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Nov 2025 23:41:15 GMT"
+          "Value": "Tue, 02 Dec 2025 00:27:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16325,13 +16188,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk=\""
+          "Value": "W/\"iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "x0yoabtvfu"
+          "Value": "ocbgml9j96"
         },
         {
           "Name": "label",
@@ -16339,12 +16202,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk="
+          "Value": "sha256-iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE="
         }
       ]
     },
     {
-      "Route": "RecipeApp.x0yoabtvfu.styles.css",
+      "Route": "RecipeApp.ocbgml9j96.styles.css",
       "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\RecipeApp.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -16354,7 +16217,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5965"
+          "Value": "11908"
         },
         {
           "Name": "Content-Type",
@@ -16362,11 +16225,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk=\""
+          "Value": "\"iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Nov 2025 23:41:15 GMT"
+          "Value": "Tue, 02 Dec 2025 00:27:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16376,7 +16239,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "x0yoabtvfu"
+          "Value": "ocbgml9j96"
         },
         {
           "Name": "label",
@@ -16384,13 +16247,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-v1czfVp50VrnvFOm/zfmmSeUzW3k5Rm17M+ORHywNyk="
+          "Value": "sha256-iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE="
         }
       ]
     },
     {
-      "Route": "RecipeApp.x0yoabtvfu.styles.css.gz",
-      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ojcy8qcg4f-x0yoabtvfu.gz",
+      "Route": "RecipeApp.ocbgml9j96.styles.css.gz",
+      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ojcy8qcg4f-ocbgml9j96.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -16399,7 +16262,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1778"
+          "Value": "2040"
         },
         {
           "Name": "Content-Type",
@@ -16407,11 +16270,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw=\""
+          "Value": "\"iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Nov 2025 23:41:15 GMT"
+          "Value": "Tue, 02 Dec 2025 00:27:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16429,7 +16292,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "x0yoabtvfu"
+          "Value": "ocbgml9j96"
         },
         {
           "Name": "label",
@@ -16437,7 +16300,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-rO8/FuCE3ySSnNsZRBWQo/XY+R6kPd2bgVFVRF3ZjBw="
+          "Value": "sha256-iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24="
+        }
+      ]
+    },
+    {
+      "Route": "RecipeApp.styles.css",
+      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ojcy8qcg4f-ocbgml9j96.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000489955904"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2040"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 02 Dec 2025 00:27:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE="
+        }
+      ]
+    },
+    {
+      "Route": "RecipeApp.styles.css",
+      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\RecipeApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11908"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 02 Dec 2025 00:27:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iMg5X3iu+vzcLzpw62fmY0z4E5vS/JhM1syrR5iereE="
+        }
+      ]
+    },
+    {
+      "Route": "RecipeApp.styles.css.gz",
+      "AssetFile": "C:\\Famback\\hector\\webdev\\RecipeApp\\RecipeApp\\obj\\Debug\\net9.0\\compressed\\ojcy8qcg4f-ocbgml9j96.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 02 Dec 2025 00:27:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iPvK4b4HeE4JBahCRGuhY6CO3NKtJGjR8uuc0jObk24="
         }
       ]
     }

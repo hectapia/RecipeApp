@@ -4,6 +4,10 @@
 @inject NavigationManager Nav
 @inject HttpClient Http
 
+@rendermode InteractiveServer
+
+<PageTitle>Counter</PageTitle>
+
 <h3>Login</h3>
 
 <EditForm Model="@model" OnValidSubmit="@LoginAsync">
