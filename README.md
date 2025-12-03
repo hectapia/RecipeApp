@@ -85,9 +85,9 @@ dotnet sln ../RecipeApp.sln add RecipeApp/RecipeApp.csproj
 
 ## Add EF Core + SQLite
 ``` 
-dotnet add package Microsoft.EntityFrameworkCore
-dotnet add package Microsoft.EntityFrameworkCore.Sqlite
-dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore --version 9.0.0
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 9.0.0
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.0
 ``` 
 
 ## Apply migrations
@@ -95,6 +95,18 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ``` 
+
+## Remove migrations
+``` 
+dotnet ef migrations remove
+```
+
+## Restore project
+``` 
+rmdir /s /q bin
+rmdir /s /q obj
+dotnet build
+```
 
 ## Run the app
 ``` 
